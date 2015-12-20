@@ -547,7 +547,9 @@
                     <connections>
                         <outlet property="addartistBarBtn" destination="3e6-Js-kM1" id="hsk-Wf-i9Z"/>
                         <outlet property="alertLogedIn" destination="ljr-cc-Ov8" id="Ed8-qS-pEo"/>
+                        <outlet property="detailEventView" destination="5NA-FC-Wgq" id="VB3-KT-D41"/>
                         <outlet property="eventDateTxt" destination="3nK-a4-4Df" id="kNP-hy-Amh"/>
+                        <outlet property="eventDescCell" destination="eEV-ph-5gb" id="qCY-K6-TE5"/>
                         <outlet property="eventDescriptionTxt" destination="U72-Jz-UGD" id="oB8-VE-JM6"/>
                         <outlet property="eventNameTxt" destination="mtZ-kh-i0x" id="qdf-s7-OwH"/>
                         <outlet property="eventPlaceTxt" destination="m9L-jn-I1T" id="42N-dK-WWF"/>
@@ -555,8 +557,6 @@
                         <outlet property="eventRegionTxt" destination="6GC-8b-MGs" id="pez-1W-6jy"/>
                         <outlet property="eventStreetNameTxt" destination="EZr-Cq-UbL" id="epl-Zp-13Y"/>
                         <outlet property="eventTownTxt" destination="jHP-zf-cuB" id="18o-EC-k0R"/>
-                        <outlet property="testcell" destination="eEV-ph-5gb" id="L36-Iw-IN3"/>
-                        <outlet property="testviewke" destination="5NA-FC-Wgq" id="0x4-25-qq2"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pNc-tr-eay" userLabel="First Responder" sceneMemberID="firstResponder"/>

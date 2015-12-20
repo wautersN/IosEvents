@@ -16,12 +16,13 @@ class OneEventTableViewController: UITableViewController {
     @IBOutlet weak var eventDescriptionTxt: UILabel!
     @IBOutlet weak var eventRatingCtr: RatingControl!
 
-    @IBOutlet var testviewke: UITableView!
+    @IBOutlet var detailEventView: UITableView!
     @IBOutlet weak var alertLogedIn: UILabel!
     
     var items: [String] = []
     
-    @IBOutlet weak var testcell: UITableViewCell!
+    @IBOutlet weak var eventDescCell: UITableViewCell!
+    
     var event: Event?
     
     @IBOutlet weak var addartistBarBtn: UIBarButtonItem!
@@ -48,7 +49,7 @@ class OneEventTableViewController: UITableViewController {
             eventRatingCtr.rating = event.rating
             
  
-            testcell .sizeToFit()
+            eventDescCell.sizeToFit()
             //self.testviewke.rowHeight = 100
        
             addartistBarBtn.enabled = Globals.logedIn
@@ -57,7 +58,7 @@ class OneEventTableViewController: UITableViewController {
             
             
         }
-        self.testviewke.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.detailEventView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         
     }
@@ -67,7 +68,7 @@ class OneEventTableViewController: UITableViewController {
     func reloaddata(){
         
         print(self.items)
-        testviewke.reloadData()
+        detailEventView.reloadData()
     }
 
     
