@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Je bent niet aangemeld, je kan geen artiesten toevoegen of de score aanpassen. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ljr-cc-Ov8">
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Je bent niet aangemeld, je kan geen artiesten toevoegen/ zien of de score aanpassen. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ljr-cc-Ov8">
                             <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <animations/>
@@ -545,6 +545,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1000"/>
                     <connections>
+                        <outlet property="addartistBarBtn" destination="3e6-Js-kM1" id="hsk-Wf-i9Z"/>
                         <outlet property="alertLogedIn" destination="ljr-cc-Ov8" id="Ed8-qS-pEo"/>
                         <outlet property="eventDateTxt" destination="3nK-a4-4Df" id="kNP-hy-Amh"/>
                         <outlet property="eventDescriptionTxt" destination="U72-Jz-UGD" id="oB8-VE-JM6"/>

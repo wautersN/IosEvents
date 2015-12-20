@@ -24,6 +24,7 @@ class OneEventTableViewController: UITableViewController {
     @IBOutlet weak var testcell: UITableViewCell!
     var event: Event?
     
+    @IBOutlet weak var addartistBarBtn: UIBarButtonItem!
     
 
     override func viewDidLoad() {
@@ -50,7 +51,9 @@ class OneEventTableViewController: UITableViewController {
             testcell .sizeToFit()
             //self.testviewke.rowHeight = 100
        
+            addartistBarBtn.enabled = Globals.logedIn
                alertLogedIn.hidden = Globals.logedIn
+            eventRatingCtr.userInteractionEnabled = Globals.logedIn
             
             
         }

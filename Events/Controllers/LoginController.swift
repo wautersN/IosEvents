@@ -18,12 +18,14 @@ class LoginViewController: UIViewController{
                 Alamofire.request(.POST, "https://eventsbackend.herokuapp.com/login", parameters: parameters,encoding: .JSON ).responseJSON {  result in
                     let json = JSON(data: result.data!)
                     let token = json["token"].stringValue
-                    print(token)
                     Globals.logedIn = token.isEmpty ? false : true
-                    print(Globals.logedIn)
-                    print("Eerst")
-                    Globals.token = "Bearer " + token
-                   self.performSegueWithIdentifier("ShowEvents", sender: nil)
+                    if(Globals.logedIn ){
+                        Globals.token = "Bearer " + token
+                        self.performSegueWithIdentifier("ShowEvents", sender: nil)
+                    } else {
+                        self.txtname.backgroundColor = UIColor.redColor()
+                        self.txtpas.backgroundColor = UIColor.redColor()
+                    }
                 }
             }
     }
